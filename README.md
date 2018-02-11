@@ -22,7 +22,7 @@ $ ios-sim showdevicetypes
 Running on iPhone-SE. Do not sudo run. 
 
 ```bash
-$ ionic cordova run ios --target=“iPhone-SE”
+$ ionic cordova run ios --target="iPhone-SE"
 ```
 
 If gives error try this before running.
