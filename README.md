@@ -25,7 +25,7 @@ Running on iPhone-SE. Do not sudo run.
 $ ionic cordova run ios --target="iPhone-SE"
 ```
 
-If gives error try this before running.
+If run gives error try this before running.
 
 ```bash
 $ sudo chown -v -R -L yourUserName /pathtoYourApp
