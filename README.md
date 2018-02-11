@@ -3,26 +3,30 @@ Simple ionic app that stores income, expense data using ionic sqlite
 
 try `ionic serve --lab` and download dependency
 
-# download platforms:
+download platforms:
 
-ionic cordova platform rm android
+```bash
+$ ionic cordova platform rm android
+$ ionic cordova platform rm ios
+$ ionic cordova platform add android
+$ ionic cordova platform add ios
+```
 
-ionic cordova platform rm ios
+It will only run correctly in simulator. See what devices are available.
 
-ionic cordova platform add android
+```bash
+$ cd platforms/ios/cordova && npm install ios-sim
+$ ios-sim showdevicetypes
+```
 
-ionic cordova platform add ios
+Running on iPhone-SE. Do not sudo run. 
 
-# It will only run correctly in simulator. See what devices are available.
+```bash
+$ ionic cordova run ios --target=“iPhone-SE”
+```
 
-cd platforms/ios/cordova && npm install ios-sim
+If gives error try this before running.
 
-ios-sim showdevicetypes
-
-# Running on iPhone-SE. Do not sudo run. 
-
-ionic cordova run ios --target=“iPhone-SE”
-
-# If gives error try this before running.
-
-sudo chown -v -R -L yourUserName /pathtoYourApp
+```bash
+$ sudo chown -v -R -L yourUserName /pathtoYourApp
+```
